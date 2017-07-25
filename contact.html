@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Basic Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+</head>
+<body>
+ <table border=5>
+ 	<tr>
+ 		<td id= columnOne>&nbsp;</td>
+ 		<td id="nameBox" style="vertical-align: middle">Caden Mayo</td>
+ 		<td id="blankSpace">&nbsp;</td>
+ 		<td id=linkBox style="vertical-align: middle"><h2 id="links"><a href="index.html">About</a> |  <a href="portfolio.html">Portfolio</a>  |  <a href="contact.html">Contact</a></h2></td>
+ 		<td id="backSide">&nbsp;</td>
+	</tr>
+	<tr>
+		<td id="spacerBarUp" colspan="5">&nbsp;</td>
+	</tr>
+	<tr style="height: 20vh;">
+ 		<td>&nbsp;</td>
+ 		<td rowspan="2" id="bioBox" style="vertical-align: top;">
+ 		<h2 style="color: #4aaaa5; font-size: 6vh; font-family: 'Georgia', Times, 'Times New Roman',serif;"">Contact Me</h2>
+ 		<hr>
+ 		<form name="fullForm" id="emailBox" action="javascript:DoSubmit();" method="get" return string;>
+ 			Name<br>
+ 			<input type="text" name="fullName" id="userName">
+ 			<br>Subject<br>
+ 			<input type="text" id="mailSubjecto" name="subject" return="text">
+ 			<br>Message<br>
+ 			<textarea id="emailMeat" name="body" style="height: 12vh; width: 35vw;"></textarea>
+ 			<br>
+ 			<input type="submit" name="send" value="Send">
+ 		</form> 
+		</td>
+		<td>&nbsp;</td>
+		<td id="contactLinks">
+		<h2 style="color: #4aaaa5; font-size: 4vh;">Connect With Me</h2>
+		<hr>
+		<a href="https://github.com/CadenMay0"><img src="assets/images/if_github_401441.png" style="height: 10vh; width: 10vh;" alt="Github"></a>
+		<a href="https://www.linkedin.com/in/joseph-mayo-4a6773144/"><img src="assets/images/if_linkedin_395524.png" style="height: 10vh; width: 10vh;" alt="Linkedin"></a>
+		<a href="https://stackoverflow.com/users/8313831/c-mayo"><img src="assets/images/if_stackoverflow_273179.png" style="height: 10vh; width: 10vh;" alt="StackOverflow"></a>
+		</td>
+	</tr>
+	<tr>
+		<td id="underBox" colspan="1">&nbsp;</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+	<tr>
+		<td id="spacerBarLow" colspan="5">&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="5" style="height: 1vh;"><hr style="color: green; padding-bottom: 1vh; background-color: green; margin: 0;"></td>
+	</tr>
+	<tr>
+		<td id="copyright" colspan=5 style="text-align: center; vertical-align: middle;">&copy; 2017 Caden Mayo</td>
+	</tr>
+</table>
+</body>'
+
+	<script>function DoSubmit(){
+	var sub = document.getElementById("mailSubjecto").value;
+ 	var mt = document.getElementById("emailMeat").value;
+ 	var strStringy = mt.toString();
+ 	var outup = strStringy.replace(/'+'/g,"%20");
+ 	var subStringy = sub.toString();
+ 	var sbubject = subStringy.replace(/'+'/g, "%20");
+ 	 window.open("mailto:cadenmayo@gmail.com?subject=&subject="+sbubject+"&body="+outup);
+ 	 return true;
+	}</script>
+</html>
