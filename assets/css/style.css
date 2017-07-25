@@ -304,10 +304,6 @@ input[type=submit] {
   margin-bottom: 0;
   font-weight: 300;
   line-height: 30px;
-  color: #fff;
-  text-align: center;
-  background: #4aaaa5;
-  border-bottom: 0;
 }
 
 }
@@ -319,6 +315,7 @@ input[type=submit] {
 
   #logo
   {
+    float: left;
     margin-left: 0;
     width: 100%;
     height: 50px;
@@ -331,9 +328,10 @@ input[type=submit] {
   }
 
   .main-section {
+    width: 90%;
     max-width: 600px;
     padding: 30px;
-    margin: 30px 20px 30px;
+    margin: 30px, 20px, 30px;
   }
   nav {
     float: left;
@@ -342,14 +340,16 @@ input[type=submit] {
   }
   .sidebar {
     float:left;
-    width: 100%;
+    width: 90%;
     max-width: 600px;
     padding: 30px;
-    margin: 0 20px 30px 20px;
+    margin: 0, 20px, 30px, 20px;
   }
   nav a {
-    padding: 0 30px;
-    margin: 0 30px;
-    line-height: 18px;
+    text-align: center;
+    padding: 0 10px;
+    margin: 0 10px;
+    line-height: 12px;
   }
+
 }
